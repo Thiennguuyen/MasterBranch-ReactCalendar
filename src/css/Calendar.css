@@ -1,0 +1,50 @@
+.calendar {
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .calendar-header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .calendar-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .calendar-days {
+    display: flex; /* Change to flex */
+  }
+  
+  /* .calendar-grid {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+
+  .calendar-day {
+    flex: 1; /* Make each day take equal space */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .calendar-day.header {
+    font-weight: bold; /* Style header days differently */
+  }
+  
+  .calendar-day.empty {
+    background-color: #f2f2f2;
+  }
+  
+  .calendar-day.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
